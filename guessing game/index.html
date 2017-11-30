@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Word Guessing Game</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+</head>
+
+<body>
+    <div class="hangman">
+        <div class="guess"></div>
+        <form class="guessForm">
+            <input type="text" class="guessLetter" maxlength="1" placeholder="Enter a letter . . . &#x23ce;" />
+            <button type="submit" class="guessButton">Guess</button>
+        </form>
+        <p>Hint: words are web related.
+            <br/><a href="https://codepen.io/">Codepen</a></p>
+        <div class="wrong">
+            <div class="wrongLetters"></div>
+        </div>
+        <div class="message">
+            <h1 class="title"></h1>
+            <p class="text"></p>
+            <button class="restart button">Play Again?</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
